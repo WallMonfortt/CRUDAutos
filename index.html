@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e3860d18f9.js" crossorigin="anonymous"></script>
+    <title>CRUD autos</title>
+</head>
+<body>
+    <div class="container">
+        <div class="tittle">
+            <h1>CRUD Autos</h1>
+        </div>
+    </div>
+
+    <div class="add">
+        <button class="addCar" id="addCarBtn"><i class="fas fa-plus"></i></button>
+    </div>
+    
+    <div class="container-form" id="overlay">
+        <div class="form">
+            <form action="" id="addCar">
+                <div class="addCar">
+                    <div class="field">
+                        <label for="model">Model: </label>
+                        <input type="text" placeholder="Model of car" id="model"/>
+                    </div>
+        
+                    <div class="field">
+                        <label for="brand">Brand: </label>
+                        <input type="text" placeholder="Brand of the car" id="brand"/>
+                    </div>
+        
+                    <div class="field">
+                        <label for="year">Year: </label>
+                        <input type="number" placeholder="year of the car" id="year">
+                    </div>
+        
+                    <div class="field">
+                        <label for="color">Color: </label>
+                        <input type="text" placeholder="color of the car" id="color">
+                    </div>
+                </div>
+                <div class="btnSub">
+                    <button type="submit" class="submitBtn" id="submitBtn">
+                        Save Car
+                    </button>
+                </div>
+                <div class="btnCls">
+                    <button type="button" title="btn-close-popup" id="btn-close-popup"><i class="fas fa-times"></i></button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="titlesCont">
+        <div class="carTitles">
+            <h4>Model</h4>
+            <h4>Brand</h4>
+            <h4>Year</h4>
+            <h4>Color</h4>
+        </div>
+    </div>
+
+    <div class="carList" id="carList"></div>
+
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
